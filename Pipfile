@@ -1,0 +1,24 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+django = "*"
+graphene = "==2.0.1"
+graphene-django = "*"
+chardet = "*"
+django-graphql-jwt = "*"
+django-cors-headers = "*"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.6"

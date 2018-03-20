@@ -1,0 +1,8 @@
+*.py[cod]
+.pyc
+!.babelrc
+!.eslintrc.json
+!.gitignore
+build/
+dist/
+nodemodules/
