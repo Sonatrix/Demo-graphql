@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
+import {
+	Card, 
+	CardTitle, 
+	CardText
+} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
 
 class Link extends Component {
 	render() {
 	    return (
-	      <div>
-	        <div>
-	          {this.props.link.description} ({this.props.link.url})
-	        </div>
-	      </div>
+	    	<Card>
+			    <CardTitle title={this.props.link.url} />
+			    <CardText>
+				          {this.props.link.description}
+			    </CardText>
+			  </Card>
 	    )
-  }
-  _voteForLink = async () => {
-    // ... you'll implement this in chapter 6
   }
 }
 
