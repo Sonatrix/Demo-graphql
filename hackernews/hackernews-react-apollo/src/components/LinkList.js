@@ -19,7 +19,7 @@ class LinkList extends Component {
   		const linksToRender = this.props.feedQuery.links
  
 		return (
-			<div>{linksToRender.map((link)=> <div><Link key={link.id} link={link}/><Divider /></div>)}</div>
+			<div>{linksToRender.map((link, index)=> <div key={link.id}><Link key={link.id} link={link}/><Divider /></div>)}</div>
 			)
 	}
 }

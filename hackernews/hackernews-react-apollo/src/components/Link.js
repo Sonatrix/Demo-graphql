@@ -4,7 +4,6 @@ import {
 	CardTitle, 
 	CardText
 } from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
 
 class Link extends Component {
 	render() {
@@ -12,7 +11,7 @@ class Link extends Component {
 	    	<Card>
 			    <CardTitle title={this.props.link.url} />
 			    <CardText>
-				          {this.props.link.description}
+				    {this.props.link.description}
 			    </CardText>
 			  </Card>
 	    )
