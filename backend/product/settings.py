@@ -59,10 +59,10 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-ROOT_URLCONF = 'hackernews.urls'
+ROOT_URLCONF = 'product.urls'
 
 GRAPHENE = {
-    'SCHEMA': 'hackernews.schema.schema',
+    'SCHEMA': 'product.schema.schema',
 }
 
 TEMPLATES = [
@@ -81,7 +81,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'hackernews.wsgi.application'
+WSGI_APPLICATION = 'product.wsgi.application'
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
