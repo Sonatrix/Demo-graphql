@@ -1,7 +1,6 @@
 import React , {Component} from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import Divider from 'material-ui/Divider';
 
 import Link from './Link'
 
@@ -19,7 +18,7 @@ class LinkList extends Component {
   		const linksToRender = this.props.feedQuery.links
  
 		return (
-			<div>{linksToRender.map((link, index)=> <div key={link.id}><Link key={link.id} link={link}/><Divider /></div>)}</div>
+			<div>{linksToRender.map((link, index)=> <Link key={link.id} link={link}/>)}</div>
 			)
 	}
 }

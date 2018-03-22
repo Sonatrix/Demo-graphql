@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import 'semantic-ui-css/semantic.min.css';
 import './styles/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
@@ -26,9 +26,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <MuiThemeProvider>
-      <App />
-    </MuiThemeProvider>
+    <App />
   </ApolloProvider>
   , document.getElementById('root')
 );

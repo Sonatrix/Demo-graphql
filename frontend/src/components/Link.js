@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
-import {
-	Card, 
-	CardTitle, 
-	CardText
-} from 'material-ui/Card';
+import { Card, Icon } from 'semantic-ui-react'
 
 class Link extends Component {
 	render() {
 	    return (
 	    	<Card>
-			    <CardTitle title={this.props.link.url} />
-			    <CardText>
-				    {this.props.link.description}
-			    </CardText>
+	    	<Card.Content header='Url Details' />
+			    <Card.Content description={this.props.link.description} />
+			    <Card.Content extra>
+			      <Icon name='user' />
+			      {this.props.link.url}
+			    </Card.Content>
 			  </Card>
 	    )
   }
